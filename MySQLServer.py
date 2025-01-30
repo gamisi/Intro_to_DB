@@ -1,12 +1,23 @@
 import mysql.connector
+from mysql.connector import Error
 
-mydb = mysql.connector.connect(
+try:
 
-    host="localhost",
-    user="root",
-    password="Qazwsx1234?",
-    database="alx_book_store"    
-)
+    mydb = mysql.connector.connect(
+
+        host="localhost",
+        user="root",
+        password="Qazwsx1234?",
+        database="alx_book_store"    
+    )
+
+    # Check if the connection was successful
+    if mydb.is_connected():
+        print("Successfully connected to the database")
+
+except Error as e:
+    print(f"Error: {e}")
+
 
 mycursor = mydb.cursor()
 
