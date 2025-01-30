@@ -39,3 +39,19 @@ CREATE TABLE IF NOT EXISTS Customers(
   address TEXT
 
 );
+
+CREATE TABLE IF NOT EXISTS Orders(
+
+  order_id INT AUTO_INCREMENT PRIMARY KEY,
+  customer_id INT,
+  order_date DATE
+
+);
+
+CREATE TABLE IF NOT EXISTS Orders(
+
+    order_detail_id INT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT,
+    book_id INT,
+    quantity FLOAT
+);
