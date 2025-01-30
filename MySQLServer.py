@@ -15,7 +15,7 @@ try:
     if mydb.is_connected():
         print("Successfully connected to the database")
 
-except Error as e:
+except mysql.connector.Error as e:
     print(f"Error: {e}")
 
 
