@@ -29,3 +29,13 @@ CREATE TABLE IF NOT EXISTS Books(
   publication_date DATE
 
 );
+
+CREATE TABLE IF NOT EXISTS Customers(
+
+  customer_id INT AUTO_INCREMENT PRIMARY KEY,
+  customer_name VARCHAR(255) NOT NULL,
+  email VARCHAR
+  price FLOAT
+  address TEXT
+
+);
