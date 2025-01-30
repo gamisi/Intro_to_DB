@@ -20,7 +20,12 @@ CREATE TABLE IF NOT EXISTS Authors (
   author_name VARCHAR(255) NOT NULL
   );
 
+CREATE TABLE IF NOT EXISTS Books(
 
+  book_id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  author_id INT
+  price FLOAT
+  publication_date DATE
 
-mycursor.close()
-mydb.close()
+);
