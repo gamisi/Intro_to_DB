@@ -33,8 +33,8 @@ CREATE TABLE IF NOT EXISTS Books(
 CREATE TABLE IF NOT EXISTS Customers(
 
   customer_id INT AUTO_INCREMENT PRIMARY KEY,
-  customer_name VARCHAR(255) NOT NULL,
-  email VARCHAR
+  customer_name VARCHAR(215) NOT NULL,
+  email VARCHAR (215)
   price FLOAT
   address TEXT
 
